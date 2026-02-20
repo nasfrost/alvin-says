@@ -133,7 +133,9 @@ func advance():
 	
 	score += 1
 	if score > global.highscore:
-		if not highscore_achieved and global.highscore > 0:
+		if global.highscore == 0:
+			highscore_achieved = true
+		if not highscore_achieved:
 			var message = $message
 			message.text = "High Score!"
 			message.force_update_transform()

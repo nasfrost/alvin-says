@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Alvin Says!"
-config/version="1.0.2"
+config/version="1.0.3"
 run/main_scene="res://scenes/home.tscn"
+config/quit_on_go_back=false
 config/features=PackedStringArray("4.5", "Mobile")
 boot_splash/bg_color=Color(0.67058825, 0.44313726, 0.28627452, 1)
 boot_splash/show_image=false

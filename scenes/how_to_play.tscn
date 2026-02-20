@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4ox4cep5hws1"]
+[gd_scene load_steps=4 format=3 uid="uid://c4ox4cep5hws1"]
 
 [ext_resource type="Theme" uid="uid://cf4vfee7ay73q" path="res://themes/default/default.tres" id="1_d4i75"]
+[ext_resource type="Script" uid="uid://b5rngflc246vr" path="res://scripts/notification_handler.gd" id="2_30apa"]
 [ext_resource type="Script" uid="uid://bo43j24yerngc" path="res://scripts/scene_button.gd" id="2_88ieg"]
 
 [node name="how_to_play" type="Panel"]
@@ -11,6 +12,12 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_d4i75")
 theme_type_variation = &"bg"
+
+[node name="notification_handler" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_30apa")
 
 [node name="title" type="Label" parent="."]
 layout_mode = 1

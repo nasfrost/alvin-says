@@ -1,10 +1,10 @@
+Control
 Button
 VBoxContainer
 Label
 Panel
 VScrollBar
 RichTextLabel
-Control
 Sprite2D
 TextureRect
 HBoxContainer

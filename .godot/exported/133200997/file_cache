@@ -1,4 +1,4 @@
-res://scenes/game.tscn::7f6edaaa56cd504cfff32fd61048ff74::1771625618::res://.godot/exported/133200997/export-c2a7af834e91ff64325daddf58e45dc0-game.scn
+res://scenes/game.tscn::632eb1db67997475f0a2cbb44f73e81e::1771626447::res://.godot/exported/133200997/export-c2a7af834e91ff64325daddf58e45dc0-game.scn
 res://scenes/home.tscn::f9c2e9395e053191369ef5460ba9a9c8::1771625600::res://.godot/exported/133200997/export-faa7347222d3a64766e63b75d2ad9c6a-home.scn
 res://scenes/how_to_play.tscn::007b5837a9947ee9b3ba0a0175a436bf::1771625626::res://.godot/exported/133200997/export-6c4ef155cb702ae28a6ed48bcfd924f7-how_to_play.scn
 res://themes/default/hover_input_buttons/hover_input_button_0.tres::7d0e290ef7d04e5309ee8e9937645bb1::1771597438::res://.godot/exported/133200997/export-2648c735c8ca11bcdac11d18e8d9a697-hover_input_button_0.res
@@ -17,7 +17,7 @@ res://themes/default/vscrollbar/grabber.tres::db11149adb4f6d71500d1917331967cf::
 res://themes/default/vscrollbar/grabber_highlight.tres::b0e1a421ec7f0395aca80c1c1d32ca9d::1771606972::res://.godot/exported/133200997/export-26a14df80adb8ff95385426825838311-grabber_highlight.res
 res://themes/default/vscrollbar/scroll.tres::bdaaa0a4627fe9e1e3c93d2f35193cd6::1771606972::res://.godot/exported/133200997/export-cf3aef8bdbf841dbb8dec085f08541b1-scroll.res
 res://themes/default/bg.tres::aecad00aecaf033c2b33280bc468f218::1771589645::res://.godot/exported/133200997/export-37e8edeecc381e9b5545fd14009c829a-bg.res
-res://themes/default/default.tres::c7d2f3bb7af1a3edab7a8f43c56983d4::1771610465::res://.godot/exported/133200997/export-5505b477a0d180ccf655a9315099ad80-default.res
+res://themes/default/default.tres::c7d2f3bb7af1a3edab7a8f43c56983d4::1771626010::res://.godot/exported/133200997/export-5505b477a0d180ccf655a9315099ad80-default.res
 res://themes/default/hover_panel.tres::df088999c544de541902dbd21896d067::1771597468::res://.godot/exported/133200997/export-989c98c34b5165c8ac17c35756870ea8-hover_panel.res
 res://themes/default/panel.tres::349f5347add0f690a3e8b70612f7f9c5::1771597468::res://.godot/exported/133200997/export-f78b703e8d12a225d51fb7f27388240b-panel.res
 res://themes/default/pressed_panel.tres::f361f1d84ccb42283cba4c619701dba6::1771603699::res://.godot/exported/133200997/export-4dc8678a7833622e59c32c2afd7f5250-pressed_panel.res

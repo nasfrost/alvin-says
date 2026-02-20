@@ -1,7 +1,2 @@
-res://scenes/how_to_play.tscn
-res://scripts/game.gd
-res://scenes/home.tscn
-res://scripts/home.gd
-res://scripts/notification_handler.gd
 res://scenes/game.tscn
-res://themes/default/default.tres
+res://scripts/notification_handler.gd

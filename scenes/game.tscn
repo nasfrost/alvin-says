@@ -1,0 +1,265 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0lk3hf2vd5tl"]
+
+[ext_resource type="Theme" uid="uid://cf4vfee7ay73q" path="res://themes/default/default.tres" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://d17cgxo4s6two" path="res://scripts/game.gd" id="2_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://dgqsy2glkr0gp" path="res://images/chipmunks.png" id="3_lnu2h"]
+[ext_resource type="Script" uid="uid://bo43j24yerngc" path="res://scripts/scene_button.gd" id="4_lbhrr"]
+
+[node name="game" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_uwrxv")
+theme_type_variation = &"bg"
+script = ExtResource("2_yqjtg")
+metadata/colors = ["red", "blue", "green", "yellow"]
+
+[node name="timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="labels_bg" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -400.0
+offset_right = 300.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"light_panel"
+
+[node name="sprite" type="Sprite2D" parent="labels_bg"]
+position = Vector2(314, -100)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_lnu2h")
+
+[node name="labels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -253.5
+offset_top = -360.0
+offset_right = 253.5
+offset_bottom = -151.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="command" type="Label" parent="labels"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -253.5
+offset_top = -97.5
+offset_right = 253.5
+offset_bottom = -60.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"command_0"
+horizontal_alignment = 1
+
+[node name="nut_container" type="HBoxContainer" parent="labels"]
+layout_mode = 0
+offset_top = 75.0
+offset_right = 507.0
+offset_bottom = 75.0
+alignment = 1
+
+[node name="score" type="Label" parent="labels"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -253.5
+offset_top = 53.5
+offset_right = 253.5
+offset_bottom = 82.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+
+[node name="message" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -77.5
+offset_top = -104.0
+offset_right = 77.5
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+text = "Ready!"
+horizontal_alignment = 1
+
+[node name="button_grid_bg" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -20.0
+offset_right = 300.0
+offset_bottom = 580.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"light_panel"
+
+[node name="button_grid" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -285.0
+offset_top = -5.0
+offset_right = 285.0
+offset_bottom = 565.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="button_ne" type="Button" parent="button_grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+focus_mode = 0
+theme_type_variation = &"input_button_0"
+
+[node name="button_nw" type="Button" parent="button_grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+focus_mode = 0
+theme_type_variation = &"input_button_1"
+
+[node name="button_se" type="Button" parent="button_grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+focus_mode = 0
+theme_type_variation = &"input_button_2"
+
+[node name="button_sw" type="Button" parent="button_grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+focus_mode = 0
+theme_type_variation = &"input_button_3"
+
+[node name="quit_button" type="Button" parent="."]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 160.0
+offset_bottom = 61.0
+focus_mode = 0
+text = "< Quit"
+flat = true
+alignment = 0
+script = ExtResource("4_lbhrr")
+metadata/scene = "res://scenes/home.tscn"
+
+[node name="veil" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"veil"
+
+[node name="game_over" type="Label" parent="veil"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.5
+offset_top = -189.0
+offset_right = 234.5
+offset_bottom = -104.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 84
+text = "Game Over!"
+horizontal_alignment = 1
+
+[node name="score" type="Label" parent="veil"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.5
+offset_top = -59.0
+offset_right = 234.5
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "score: 000"
+horizontal_alignment = 1
+
+[node name="button_container" type="VBoxContainer" parent="veil"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -170.0
+offset_top = 80.0
+offset_right = 170.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="play_again" type="Button" parent="veil/button_container"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+text = "Play Again"
+script = ExtResource("4_lbhrr")
+metadata/scene = "res://scenes/game.tscn"
+
+[node name="return_home" type="Button" parent="veil/button_container"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+text = "Return Home"
+script = ExtResource("4_lbhrr")
+metadata/scene = "res://scenes/home.tscn"
+
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="quit_button" to="quit_button" method="_on_pressed"]
+[connection signal="pressed" from="veil/button_container/play_again" to="veil/button_container/play_again" method="_on_pressed"]
+[connection signal="pressed" from="veil/button_container/return_home" to="veil/button_container/return_home" method="_on_pressed"]

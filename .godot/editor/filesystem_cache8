@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1760792813
+icon.svg::CompressedTexture2D::7338077138889196358::1757347163::1757347169::1::::<><>::
+::res://scenes/::1760793067
+game.tscn::PackedScene::4164507478738015761::1760793067::0::1::::<><>::
+home.gd::GDScript::-1::1757349041::0::1::::<>Panel<>::
+home.tscn::PackedScene::4816698400563143055::1760793067::0::1::::<><>::res://scenes/home.gd<>uid://cf4vfee7ay73q::::res://themes/default/default.tres
+::res://scripts/::1757348240
+::res://themes/::1757349287
+::res://themes/default/::1760792870
+button.stylebox::StyleBoxFlat::7626625966784085965::1757349872::0::1::::<><>::
+default.tres::Theme::5184936743989250824::1760792870::0::1::::<><>::uid://dgwnoehh6do02::::res://themes/default/button.stylebox

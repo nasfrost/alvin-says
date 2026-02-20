@@ -1,0 +1,78 @@
+[gd_resource type="Theme" load_steps=22 format=3 uid="uid://cf4vfee7ay73q"]
+
+[ext_resource type="StyleBox" uid="uid://bihks1tbhstlw" path="res://themes/default/hover_panel.tres" id="1_fi4j8"]
+[ext_resource type="StyleBox" uid="uid://btue8t0pivfin" path="res://themes/default/panel.tres" id="1_gwto0"]
+[ext_resource type="StyleBox" uid="uid://gm5lmujvea1r" path="res://themes/default/bg.tres" id="2_hu47y"]
+[ext_resource type="FontFile" uid="uid://bvsb8bjmbt323" path="res://fonts/LuckiestGuy-Regular.ttf" id="2_mlckn"]
+[ext_resource type="StyleBox" uid="uid://bendv8j6vwrjv" path="res://themes/default/input_buttons/input_button_1.tres" id="3_6meyk"]
+[ext_resource type="StyleBox" uid="uid://bqpnq3dxuf3vk" path="res://themes/default/input_buttons/input_button_0.tres" id="3_mlckn"]
+[ext_resource type="StyleBox" uid="uid://ckkqgxhj6ext8" path="res://themes/default/pressed_panel.tres" id="3_rysfi"]
+[ext_resource type="StyleBox" uid="uid://bltl3gbkub484" path="res://themes/default/pressed_input_buttons/pressed_input_button_0.tres" id="4_fi4j8"]
+[ext_resource type="StyleBox" uid="uid://draw8n7dshi20" path="res://themes/default/pressed_input_buttons/pressed_input_button_1.tres" id="4_mlckn"]
+[ext_resource type="StyleBox" uid="uid://b4dbf3712tl7o" path="res://themes/default/vscrollbar/grabber.tres" id="4_si2t2"]
+[ext_resource type="StyleBox" uid="uid://bsof66f8qjfm8" path="res://themes/default/vscrollbar/grabber_highlight.tres" id="5_71v1p"]
+[ext_resource type="StyleBox" uid="uid://c2jy7kh7cqnf2" path="res://themes/default/input_buttons/input_button_2.tres" id="5_fi4j8"]
+[ext_resource type="StyleBox" uid="uid://c83bmu02l4yli" path="res://themes/default/hover_input_buttons/hover_input_button_0.tres" id="6_5wmhy"]
+[ext_resource type="StyleBox" uid="uid://cd2kapvp67mpr" path="res://themes/default/vscrollbar/scroll.tres" id="6_71v1p"]
+[ext_resource type="StyleBox" uid="uid://dxyvh08ik4dfd" path="res://themes/default/pressed_input_buttons/pressed_input_button_2.tres" id="6_rysfi"]
+[ext_resource type="StyleBox" uid="uid://dmlw2caj2m6e0" path="res://themes/default/input_buttons/input_button_3.tres" id="7_5wmhy"]
+[ext_resource type="StyleBox" uid="uid://utp1cksd3b45" path="res://themes/default/pressed_input_buttons/pressed_input_button_3.tres" id="8_idgmj"]
+[ext_resource type="StyleBox" uid="uid://dht5ywlltakao" path="res://themes/default/hover_input_buttons/hover_input_button_1.tres" id="9_76j8m"]
+[ext_resource type="StyleBox" uid="uid://bmrgjn3mhq0k5" path="res://themes/default/hover_input_buttons/hover_input_button_2.tres" id="12_22sk2"]
+[ext_resource type="StyleBox" uid="uid://fht6p372smnj" path="res://themes/default/hover_input_buttons/hover_input_button_3.tres" id="15_si2t2"]
+[ext_resource type="StyleBox" uid="uid://c126gfsolyagd" path="res://themes/default/veil.tres" id="21_nvpjc"]
+
+[resource]
+default_font = ExtResource("2_mlckn")
+Button/colors/font_color = Color(0.49019608, 0.2627451, 0.18039216, 1)
+Button/colors/font_hover_color = Color(0.49019608, 0.2627451, 0.18039216, 1)
+Button/colors/font_hover_pressed_color = Color(0.49019608, 0.2627451, 0.18039216, 1)
+Button/colors/font_pressed_color = Color(0.49019608, 0.2627451, 0.18039216, 1)
+Button/font_sizes/font_size = 40
+Button/styles/hover = ExtResource("1_fi4j8")
+Button/styles/normal = ExtResource("1_gwto0")
+Button/styles/pressed = ExtResource("3_rysfi")
+Label/colors/font_color = Color(0.49019608, 0.2627451, 0.18039216, 1)
+Label/font_sizes/font_size = 20
+RichTextLabel/colors/default_color = Color(0.49019608, 0.2627451, 0.18039216, 1)
+RichTextLabel/font_sizes/normal_font_size = 32
+VScrollBar/styles/grabber = ExtResource("4_si2t2")
+VScrollBar/styles/grabber_highlight = ExtResource("5_71v1p")
+VScrollBar/styles/grabber_pressed = ExtResource("4_si2t2")
+VScrollBar/styles/scroll = ExtResource("6_71v1p")
+bg/base_type = &"Panel"
+bg/styles/panel = ExtResource("2_hu47y")
+command_0/base_type = &"Label"
+command_0/colors/font_color = Color(0.6784314, 0.10980392, 0.13725491, 1)
+command_0/font_sizes/font_size = 36
+command_1/base_type = &"Label"
+command_1/colors/font_color = Color(0.02745098, 0.38431373, 0.56078434, 1)
+command_1/font_sizes/font_size = 36
+command_2/base_type = &"Label"
+command_2/colors/font_color = Color(0.20392157, 0.5921569, 0.26666668, 1)
+command_2/font_sizes/font_size = 36
+command_3/base_type = &"Label"
+command_3/colors/font_color = Color(0.8509804, 0.54509807, 0.02745098, 1)
+command_3/font_sizes/font_size = 36
+input_button_0/base_type = &"Button"
+input_button_0/styles/hover = ExtResource("6_5wmhy")
+input_button_0/styles/normal = ExtResource("3_mlckn")
+input_button_0/styles/pressed = ExtResource("4_fi4j8")
+input_button_1/base_type = &"Button"
+input_button_1/styles/hover = ExtResource("9_76j8m")
+input_button_1/styles/normal = ExtResource("3_6meyk")
+input_button_1/styles/pressed = ExtResource("4_mlckn")
+input_button_2/base_type = &"Button"
+input_button_2/styles/hover = ExtResource("12_22sk2")
+input_button_2/styles/normal = ExtResource("5_fi4j8")
+input_button_2/styles/pressed = ExtResource("6_rysfi")
+input_button_3/base_type = &"Button"
+input_button_3/styles/hover = ExtResource("15_si2t2")
+input_button_3/styles/normal = ExtResource("7_5wmhy")
+input_button_3/styles/pressed = ExtResource("8_idgmj")
+light_label/base_type = &"Label"
+light_label/colors/font_color = Color(0.8745098, 0.74509805, 0.5568628, 1)
+light_panel/base_type = &"Panel"
+light_panel/styles/panel = ExtResource("1_gwto0")
+veil/base_type = &"Panel"
+veil/styles/panel = ExtResource("21_nvpjc")
